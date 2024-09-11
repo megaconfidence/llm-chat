@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "llm-chat",
+  "description": "This extension hosts an llm-chat web server on localhost",
+  "version": "1.6",
+  "action": {},
+  "permissions": ["declarativeNetRequest"],
+  "host_permissions": [
+    "http://*:11434/api/tags",
+    "http://*:11434/api/generate",
+    "https://*:11434/api/tags",
+    "https://*:11434/api/generate"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
+

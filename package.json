@@ -1,0 +1,17 @@
+{
+  "name": "llm-chat",
+  "version": "1.0.0",
+  "description": "Just a simple HTML UI for Ollama",
+  "main": "api.js",
+  "scripts": {
+    "deploy": "wrangler pages deploy",
+    "dev": "wrangler pages dev",
+    "start": "wrangler pages dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "wrangler": "^3.76.0"
+  }
+}
