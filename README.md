@@ -3,7 +3,7 @@
 Just a simple HTML UI for Ollama (retrofitted with support for [Cloudflare
 Workers AI](https://developers.cloudflare.com/workers-ai/))
 
-> Forked from [https://github.com/llm-chat/llm-chat](https://github.com/llm-chat/llm-chat)
+> 🍴 Forked from [https://github.com/ollama-ui/ollama-ui](https://github.com/ollama-ui/ollama-ui)
 
 ## Set up
 

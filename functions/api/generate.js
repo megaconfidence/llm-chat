@@ -1,6 +1,11 @@
 export async function onRequest({ request, env }) {
   const { model, prompt, system } = await request.json();
-  const response = await env.AI.run(model, { prompt, stream: true });
+  const messages = [
+    { role: "user", content: prompt },
+    { role: "system", content: system },
+  ];
+
+  const response = await env.AI.run(model, { messages, stream: true });
   const stream = response
     .pipeThrough(new TextDecoderStream())
     .pipeThrough(new SSEToStream())
